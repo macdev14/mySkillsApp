@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.macdev.myskillsapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,5 +27,21 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
-  }
+  },
+  "plugins": [
+    [
+      "@morrowdigital/watermelondb-expo-plugin",
+      {
+        "databases": ["morrow.db"]
+      }
+    ],
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "kotlinVersion": "1.6.10"
+        }
+      }
+    ]
+]
 }
